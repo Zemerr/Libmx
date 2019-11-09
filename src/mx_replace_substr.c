@@ -9,7 +9,7 @@ char *mx_replace_substr(const char *str, const char *sub, const char *replace) {
 	int count = mx_count_substr(str, sub);
 	int new_len = len_str - (count * n) + (count * len_rep);
 	char *newstr = mx_strnew(new_len);	
-	
+//   Проверка на нулы	
     for (; *str != '\0'; str++) {
         if ( *str == *sub) {
             if ( mx_strncmp(str, sub, n) == 0) {
@@ -33,6 +33,6 @@ char *mx_replace_substr(const char *str, const char *sub, const char *replace) {
 
 /*
 int main() {
-	printf("%s", mx_replace_substr("McDonalds", "alds", "uts"));
+	printf("%s", mx_replace_substr("McDonalds", "alds", "qqqqqqqqqq"));
 //	printf("%s", mx_replace_substr("Ururu turu", "ru", "ta"));
-} */
+}*/
