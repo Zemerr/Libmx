@@ -5,6 +5,8 @@ void *mx_memccpy(void *restrict dst, const void *restrict src, int c, size_t n) 
 	char *dst_ = (char *) dst;
     char *src_ = (char *) src;
     unsigned long  i = 0;
+	if ( n <= 0)
+		return dst;
     for (; src_[i] != '\0' && i < n; i++) {
 		
         dst_[i] = src_[i];
@@ -25,9 +27,9 @@ int main() {
 //	void qwe[15] = memccpy(dst, src, 0, 10);
 //	printf("%s\n", qwe);
    // Копируем данные из массива src в массив dst
-	memccpy (dst, src, 2, 10);
+	memccpy (dst, src, 2, 3);
  	printf ("dst: %s\n", dst);
-	mx_memccpy (dst1, src, 2, 10);
+	mx_memccpy (dst1, src, 2, 3);
 	printf ("dst: %s\n", dst1);
 	
 	

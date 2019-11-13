@@ -35,7 +35,7 @@ char *mx_nbr_to_hex(unsigned long nbr) {
 		
 	return hex;
 }
-/*int main() {
-	printf("%s", mx_nbr_to_hex(52));
+int main() {
+	printf("%s", mx_nbr_to_hex(1000));
 	return 0;
-}*/
+}

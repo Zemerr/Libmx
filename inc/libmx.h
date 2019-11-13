@@ -5,6 +5,14 @@
 #include <wchar.h>
 #include <stdlib.h>
 #include <fcntl.h>
+#include <stdbool.h>
+
+
+typedef struct s_list {
+void *data;
+struct s_list *next;
+} t_list;
+
 
 void mx_printchar(const char c);
 void mx_swap_char(char *s1, char *s2);
@@ -18,6 +26,7 @@ int mx_isprint(char c);
 double mx_pow(double n, unsigned int pow);
 
 int mx_isspace(char c);
+bool mx_cmp(void *, void *);
 
 unsigned long mx_hex_to_nbr(const char *hex);
 
@@ -63,4 +72,12 @@ void *mx_memrchr(const void *s, int c, size_t n);
 void *mx_memmem(const void *big, size_t big_len, const void *little, size_t little_len);
 void *mx_memmove(void *dst, const void *src, size_t len);
 void *mx_realloc(void *ptr, size_t size);
+
+t_list *mx_create_node(void *data);
+void mx_push_front(t_list **list, void *data);
+void mx_push_back(t_list **list, void *data);
+void mx_pop_front(t_list **head);
+void mx_pop_back(t_list **head);
+int mx_list_size(t_list *list);
+t_list *mx_sort_list(t_list *lst, bool (*cmp)(void *, void *));
 #endif

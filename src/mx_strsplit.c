@@ -11,7 +11,8 @@ char **mx_strsplit(const char *s, char c) {
 	first = mx_strtrim(s);
 		
 	arr = (char **)malloc(sizeof (char *) * word + 1);
-	
+	if (s == NULL)
+		return NULL;	
 	for	(int i = 0; first[i] != '\0'; i++) {
 		if ((first[i] == c && mx_isprint(first[i+1]) == 1 && 
 		mx_isspace(first[i+1]) == 0 && first[i+1] != c) || (i == 0 && first[i] != c))  {
@@ -39,9 +40,9 @@ char **mx_strsplit(const char *s, char c) {
 }
 /*
 int main() {
-	char *s = "**Good bye,**Mr.*Anderson.****";
-//	char *s = " Knock, knock, Neo. ";
-	char **arr = mx_strsplit(s, '*');
+//	char *s = NULL;
+	char *s = " Knock, knock, Neo. ";
+	char **arr =  mx_strsplit(s, ' ');
 	for (int i = 0; arr[i] != NULL; i++) {
 		printf("%s\n", arr[i]);
 	}

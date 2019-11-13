@@ -1,5 +1,5 @@
 #include "../inc/libmx.h"
-#include <fcntl.h>
+
 char *mx_file_to_str(const char *file) {
 	int fd = open(file , O_RDONLY);
 	char c;
