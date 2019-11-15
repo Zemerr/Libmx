@@ -7,10 +7,3 @@ int mx_strncmp(const char *s1, const char *s2, int n) {
         i++;
     return s1[i]-s2[i];
 }
-/*
-int main() {
-	char *s1 = "xxxqxx";
-
-	char *s2 = "xxxxxx";
-	printf("%d", mx_strncmp(s1, s2, 3));
-} */

@@ -21,14 +21,3 @@ char *mx_strtrim(const char *str) {
 	
 	return NULL;
 }
-/*
-int main() {
-	char *name = "\f My name... is \r Neo \t\n ";
-
-//	printf("%s\n", name);
-//	char *name = "\f My name... is  Neo \r\t\n ";
-	printf("%s", mx_strtrim(name));
-//	printf("%d", mx_strlen(mx_strtrim(name)));
-//	 mx_strtrim(name);
-}*/
-	

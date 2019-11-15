@@ -1,11 +1,23 @@
 #include "../inc/libmx.h"
-//#include <stdio.h>
+
+static int numer( int i, int number) {
+	if ( number == 0 ) {
+		i = 1;
+		return i;
+	}	
+	while (number >= 1) {
+        i++;
+        number = number/10;
+    }
+	return i;	
+}
 
 char *mx_itoa(int number) {
 	int copy = number;
 	int i = 0;
 	char *num;
 	int flag = 0;
+
 	if (number == -2147483648){
 		num = "-2147483648";
 		return num;
@@ -16,11 +28,7 @@ char *mx_itoa(int number) {
 		flag = 1;
 		i++;
 	}
-	while (number >= 1) {
-		i++;
-		number = number/10;
-	}
-	
+	i = numer(i , number);
 	num = mx_strnew(i);
 	for (int y = 1; y <= i; y++) {
 		num[i-y] = (copy % 10) + 48;
@@ -31,9 +39,3 @@ char *mx_itoa(int number) {
 	}
 	return num;	
 }
-/*
-int main() {
-	printf("%s", mx_itoa(-2147483648));
-}*/
-	
-		

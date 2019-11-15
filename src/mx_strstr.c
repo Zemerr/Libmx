@@ -16,10 +16,3 @@ char *mx_strstr(const char *haystack, const char *needle) {
 	}
 	return NULL;
 }
-/*
-int main() {
-	char *s1 = "McDonalds";
-	char *s2 = "Donpppp";
-	printf("%s", mx_strstr(s1, s2));
-	return 0;
-}*/

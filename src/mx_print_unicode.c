@@ -28,13 +28,3 @@
 	}
 	write(1, &b, 4);
 }
-/*
-int main() {
-	wchar_t h = 128582;
-//	wchar_t h = 0x1F646;
-	mx_print_unicode(h);
-//	char b[] = { 0xC6, 0xA2};
-//	write(1, &b, 4);
-//	write(1, "\n", 1);
-}
-*/

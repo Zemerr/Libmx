@@ -7,10 +7,3 @@ void mx_str_reverse(char *s) {
 		
 	}
 }
-/*
-int main() {
-	char str[] = "game over";
-	mx_str_reverse(str);
-	printf("%s", str);
-	return 0;
-}*/

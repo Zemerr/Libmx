@@ -13,11 +13,3 @@ void *mx_memmove(void *dst, const void *src, size_t len) {
 	return dst_;
 	
 }
-/*
-int main() {
-//	char  dst = 0;
-   char src[] = "123456789";
-   // size_t p = 4;
-    printf("%s\n", mx_memmove(&src[4], &src[3], 3));
-    printf("%s", src);
-}*/

@@ -7,8 +7,10 @@ char *mx_file_to_str(const char *file) {
 	int wd;
 	int i = 0;
 	int len = 0;	
-	if (fd < 0)
-		close(fd);	
+	if (fd < 0) {
+		close(fd);
+		return NULL;
+	}	
 	wd = read(fd, &c, 1);
 	while(wd > 0) {
 		wd = read(fd, &c, 1);
@@ -16,8 +18,10 @@ char *mx_file_to_str(const char *file) {
 	}
 	close(fd);
 	fd = open(file , O_RDONLY);
-	if (fd < 0)
+	if (fd < 0) {
         close(fd);
+		return NULL;
+	}
 	str = mx_strnew(len);
 	wd = read(fd, &c, 1);
 	while(wd > 0) {
@@ -28,8 +32,3 @@ char *mx_file_to_str(const char *file) {
 	close(fd);
 	return str;
 }
-/*
-int main(int argc, char *argv[]) {
-	if (argc > 0)
-		printf("%s", mx_file_to_str(argv[1]));
-}*/

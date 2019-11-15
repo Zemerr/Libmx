@@ -43,8 +43,12 @@ void mx_print_unicode(wchar_t c);
 void mx_foreach(int *arr, int size, void (*f)(int));
 void mx_print_strarr(char **arr, const char *delim);
 void mx_swap_int( int *i, int *y);
-
+void mx_str_reverse(char *s);
 void mx_strdel(char **str);
+void mx_del_strarr(char ***arr);
+int mx_quicksort(char **arr, int left, int right);
+
+char *mx_itoa(int number);
 char *mx_strndup(const char *s1, size_t n);
 char *mx_strncpy(char *dst, const char *src, int len);
 char *mx_strcat(char *restrict s1, const char *restrict s2);
@@ -60,6 +64,7 @@ char *mx_file_to_str(const char *file);
 int mx_read_line(char **lineptr, int buf_size, char delim, const int fd);
 char *mx_replace_substr(const char *str, const char *sub, const char *replace);
 int mx_strncmp(const char *s1, const char *s2, int n);
+
 
 
 

@@ -1,5 +1,6 @@
 #include "../inc/libmx.h"
-//#include <stdio.h>
+
+
 int mx_bubble_sort(char **arr, int size) {
 	int i = 0;
 	int count = 0;
@@ -18,9 +19,3 @@ int mx_bubble_sort(char **arr, int size) {
 	}
 	return count;
 }
-/*
-int main() {
-	char *arr[] = {"abc", "xyz", "ghi", "def"};
-	printf("%d", mx_bubble_sort(arr, 4));
-	return 0;
-}*/

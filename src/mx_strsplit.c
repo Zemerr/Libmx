@@ -38,19 +38,3 @@ char **mx_strsplit(const char *s, char c) {
 	arr[l] = NULL;
 	return arr;
 }
-/*
-int main() {
-//	char *s = NULL;
-	char *s = " Knock, knock, Neo. ";
-	char **arr =  mx_strsplit(s, ' ');
-	for (int i = 0; arr[i] != NULL; i++) {
-		printf("%s\n", arr[i]);
-	}
-	return 0;
-}*/
-				
-			
-				
-				
-						
-				  

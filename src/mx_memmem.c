@@ -19,11 +19,3 @@ void *mx_memmem(const void *big, size_t big_len, const void *little, size_t litt
 	}	
     return NULL;
 }
-/*
-int main() {
-	char *s1 = "McDonalds";
-    char *s2 = "Dopppp";
-    printf("%s", mx_memmem( s1, 9,  s2, 5));
-    return 0;
-}*/
-

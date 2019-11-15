@@ -15,24 +15,3 @@ int mx_count_words(const char *str, char c) {
 		count++;
 	return count;
 }
-
-
-/*			
-int main() {
-   char *str1 = "   *frsdgerg * follow";
-
-
-//	char *str1 = "* ";
-
-
-//	char *str = "gdf ";
-//	char *str = " follow * the white rabbit ";
-
-//	char *str = "*********** f";
-
-//	char *str = "    ";
-//	printf("%d\n", mx_count_words(str, '*'));
-//	printf("%d\n", mx_count_words(str, ' '));
-	printf("%d\n", mx_count_words(str1, 'F'));
-//	printf("%d\n", mx_count_words(str, '^'));
-}*/	

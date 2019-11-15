@@ -14,11 +14,3 @@ void *mx_memcpy(void *restrict dst, const void *restrict src, size_t n) {
 	dst_[i] = '\0';
 	return dst;
 }
-/*
-int main() {
-	int  dst = 0;
-	int src = 15555;
-	size_t p = 4;
-	printf("%s\n", mx_memcpy(&dst, &src, p));
-	printf("%s", memcpy(&dst, &src, p));
-}*/

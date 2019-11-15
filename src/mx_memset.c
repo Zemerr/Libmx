@@ -7,10 +7,3 @@ void *mx_memset(void *b, int c, size_t len) {
 	}
 	return b;
 }
-/*
-int main() {
-	char p[] = "Heeelllllo";
-	char r = 'r';
-	size_t h = 5;
-	printf("%s", mx_memset(p, r, h));
-}*/	

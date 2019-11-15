@@ -32,9 +32,3 @@ char *mx_del_extra_spaces(const char *str) {
 	free(newstr);
 	return laststr; 
 }
-/*
-int main() {
-	char *name = "\f My name... is \r Neo \t\n ";
-	printf("%s", mx_del_extra_spaces(name));
-}*/
-	

@@ -16,12 +16,3 @@ int mx_get_substr_index(const char *str, const char *sub) {
 	}
 	return -2;
 }
-/*
-int main() {
-	printf("%d\n", mx_get_substr_index("McDonalds", "Don"));
-	printf("%d\n", mx_get_substr_index("McDonalds Donuts", "on"));
-	printf("%d\n", mx_get_substr_index("McDonalds", "Donatello"));
-	printf("%d\n", mx_get_substr_index("McDonalds", NULL));
-	printf("%d\n", mx_get_substr_index(NULL, "Don"));
-	return 0;
-}*/

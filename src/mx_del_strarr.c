@@ -8,13 +8,3 @@ void mx_del_strarr(char ***arr) {
 	free(*arr);
 	*arr = NULL;
 }
-/*
-int main() {
-	char **arr = (char **)malloc(sizeof (char *)*5);
-	for ( int i = 0; i < 5; i++) {
-		arr[i] =  (char *)malloc(sizeof (char)*5);
-	}
-	arr[5] = NULL;
-	mx_del_strarr(&arr);
-	return 0;
-}*/

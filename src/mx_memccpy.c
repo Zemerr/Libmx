@@ -1,5 +1,4 @@
 #include "../inc/libmx.h"
-//#include <string.h>
 
 void *mx_memccpy(void *restrict dst, const void *restrict src, int c, size_t n) {
 	char *dst_ = (char *) dst;
@@ -10,27 +9,9 @@ void *mx_memccpy(void *restrict dst, const void *restrict src, int c, size_t n) 
     for (; src_[i] != '\0' && i < n; i++) {
 		
         dst_[i] = src_[i];
-		if (src_[i-1] == c && c != 0)
-			break;
+		if (src_[i] == c && c != 0)
+			return dst_+i+1;
     }
-    dst_[i] = '\0';
-    return dst;
+    
+    return NULL;
 }
-
-/*
-int main() {
-	unsigned char src[15]="1234567890";
-
-   // Массив приемник данных
-   unsigned char dst[15]="";
-	unsigned char dst1[15]="";
-//	void qwe[15] = memccpy(dst, src, 0, 10);
-//	printf("%s\n", qwe);
-   // Копируем данные из массива src в массив dst
-	memccpy (dst, src, 2, 3);
- 	printf ("dst: %s\n", dst);
-	mx_memccpy (dst1, src, 2, 3);
-	printf ("dst: %s\n", dst1);
-	
-	
-}*/

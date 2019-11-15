@@ -10,10 +10,3 @@ int mx_get_char_index(const char *str, char c) {
 	} 
 	return -1;
 }
-/*
-int main() {
-	const char *s = "HELLE";
-	char c = 'E';
-	printf("%d", mx_get_char_index(s, c));
-	return 0;
-}*/

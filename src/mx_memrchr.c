@@ -11,8 +11,3 @@ void *mx_memrchr(const void *s, int c, size_t n) {
 	}
 	return NULL;
 }
-/*
-int main() {
-//	const char *s =  
-	printf("%s", mx_memrchr("Trinity", 'i', 2));
-}*/ 	

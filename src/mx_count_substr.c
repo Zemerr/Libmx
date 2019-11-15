@@ -13,11 +13,4 @@ int mx_count_substr(const char *str, const char *sub) {
 		}
 	}
 	return i;
-	}
-/*
-int main() {
-	char *str = "yo, yo, yo Neo";
-	char *sub = NULL;
-	printf ("%d", mx_count_substr(str, sub));
-}*/
-	
+}

@@ -18,11 +18,3 @@ char *mx_strjoin(const char *s1, const char *s2) {
 	}
 	return new_s;
 }
-/*
-int main() {
-	char *str1 = "this";
-//	char *str2 = "dodge";
-	char *str3 =  NULL;
-//	printf("%s", mx_strjoin(str2, str1));
-	printf("%s", mx_strjoin(str1, str3));
-} */

@@ -42,11 +42,3 @@ int mx_quicksort(char **arr, int left, int right) {
 
 	return count;
 }
-/*
-int main() {
-	char *arr[] =   {"Michelangelo2", "Donatello2", "Leonardo2", "Raphael2","Michelangelo1", "Donatello1", "Leonardo1", "Raphael1"};
-	printf("%d\n", mx_quicksort( arr, 0, 7));
-	for (int i = 0; i<=7; i++)
-		printf("%s\n ", arr[i]);
- 
-}*/

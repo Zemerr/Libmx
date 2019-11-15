@@ -5,9 +5,3 @@ char *mx_strndup(const char *s1, size_t n) {
 	str = mx_strncpy(str, s1, n);
 	return str;
 }
-/*
-int main() {
-	char *s = "Hello";
-	printf("%s", mx_strndup(s, 3));
-	return 0;
-}*/

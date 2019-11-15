@@ -6,10 +6,3 @@ t_list *mx_create_node(void *data) {
 	new->next = NULL;
 	return new;
 }
-/*
-int main() {
-	char *t = "Hello";
-	
-	t_list *list = mx_create_node(t);
-	printf("%s", list->data);
-}*/

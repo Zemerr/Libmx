@@ -11,10 +11,3 @@ void mx_print_strarr(char **arr, const char *delim) {
 	write(1, "\n", 1);
 	}
 }
-/*
-int main() {
-	char *arr[4] = {"Hello", "World", "Test", 0};
-	const char *delim = "ACAB";
-	mx_print_strarr(arr, delim);
-	return 0;
-}*/
