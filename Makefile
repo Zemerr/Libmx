@@ -59,6 +59,8 @@ SRC = src/mx_binary_search.c \
   src/mx_strncmp.c\
   src/mx_isspace.c\
   src/mx_isprint.c\
+  src/mx_swap_str.c\
+  src/mx_swap_int.c\
 
 OUT = mx_del_extra_spaces.o \
   mx_file_to_str.o \
@@ -117,6 +119,8 @@ OUT = mx_del_extra_spaces.o \
   mx_strncmp.o\
   mx_isspace.o\
   mx_isprint.o\
+  mx_swap_str.o\
+  mx_swap_int.o\
 
 CLANG = -std=c11 -Wall -Wextra -Werror -Wpedantic
 
