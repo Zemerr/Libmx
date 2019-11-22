@@ -19,7 +19,7 @@ void *mx_realloc(void *ptr, size_t size) {
 		ptr = mx_memcpy(ptr, temp, len); 
 		free(temp);
 	}
-	else if (ptr != NULL && size < len && size > 0) {
+	else if (ptr != NULL && size <= len && size > 0) {
 		temp = mx_strnew(size);
         temp = mx_memcpy(temp, ptr, size);
         ptr = mx_strnew(size);

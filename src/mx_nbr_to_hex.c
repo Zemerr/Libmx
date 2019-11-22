@@ -1,6 +1,6 @@
 #include "../inc/libmx.h"
 
-static char *convert(int copy, char *hex, int num, int i) {
+static char *convert(unsigned long copy, char *hex, int num, int i) {
 	while (copy > 0) {
         num  = copy % 16;
         if (num >= 10) {
@@ -25,11 +25,12 @@ char *mx_nbr_to_hex(unsigned long nbr) {
 		hex[0] = '0';
 		return hex;
 	}
-	while (nbr >= 16) {
+	
+	while (nbr/16 >= 1) {
 		nbr = nbr/16;
 		i++;
 	}
-	hex = mx_strnew(i);
+	hex = mx_strnew(i+1);
 	hex = convert(copy, hex, num, i);	
 	return hex;
 }

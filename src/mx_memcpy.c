@@ -11,6 +11,5 @@ void *mx_memcpy(void *restrict dst, const void *restrict src, size_t n) {
 	for (; src_[i] != '\0' && i < n; i++) {
 		dst_[i] = src_[i];
 	}
-	dst_[i] = '\0';
 	return dst;
 }

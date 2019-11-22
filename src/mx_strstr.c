@@ -3,8 +3,7 @@
 
 char *mx_strstr(const char *haystack, const char *needle) {
 
-	if ( haystack == NULL || needle == NULL)
-		return NULL;
+	
 	int n = mx_strlen(needle);
 	
 	for (; *haystack; ++haystack)  {

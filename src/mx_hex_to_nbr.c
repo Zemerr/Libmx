@@ -27,6 +27,8 @@ unsigned long mx_hex_to_nbr(const char *hex) {
            	num = num + (hex[len - i] - 87) * base;
            	base = base * 16;
 		}
+		else 
+			return 0;
 	}
 	
 	return num;
